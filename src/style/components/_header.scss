@@ -1,0 +1,16 @@
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3{
+    margin-left: 50px;
+  }
+
+  ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+}

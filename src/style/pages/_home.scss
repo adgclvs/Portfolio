@@ -1,0 +1,33 @@
+.home {
+  .main{
+    height: 100vh;
+    
+    .myself{
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .technologies{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      margin: 0 20%;
+
+      p {
+        padding: 0 30px ;
+      }
+
+      ul {
+        background-color: grey;
+        padding: 15px;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+    }
+  }
+}
