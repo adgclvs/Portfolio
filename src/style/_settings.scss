@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "title-font";
+  src: url(../assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: "text-font";
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+$title-font: "title-font", sans-serif;
+$text-font: "text-font", sans-serif;
+
 * {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: $text-font;
 }

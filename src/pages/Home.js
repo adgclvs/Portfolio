@@ -1,47 +1,22 @@
-import React from "react";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
 const Home = () => {
   return (
     <div>
       <div className="home">
         <Header />
-        <div className="main">
-          <div className="myself">
-            <p>Hello i'm Adrien Student at Bordeaux University</p>
-            <img src="../assets/img/icon-html.png" alt="" width="200px" height="200px" />
-          </div>
-
-          <div className="technologies">
-            <p>Techno learned</p>
-            <ul>
-              <li>
-                <img src="../assets/img/icon-html.png" alt="Logo HTML" width="50px" height="50px" />
-              </li>
-              <li>
-                <img src="../assets/img/icon-css.png" alt="Logo CSS" width="50px" height="50px" />
-              </li>
-              <li>
-                <img
-                  src="../assets/img/icon-js.png"
-                  alt="Logo JavaScript"
-                  width="50px"
-                  height="50px"
-                />
-              </li>
-              <li>
-                <img
-                  src="../assets/img/icon-react.png"
-                  alt="Logo React"
-                  width="50px"
-                  height="50px"
-                />
-              </li>
-              <li>
-                <img src="../assets/img/icon-sass.png" alt="Logo Sass" width="50px" height="50px" />
-              </li>
-            </ul>
-          </div>
+        <Main />
+        <div className="about">
+          <h2>Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi fugit quo rerum
+            nihil? Rerum molestiae pariatur sit exercitationem ab itaque, nostrum alias iste.
+            Molestias veniam nemo repudiandae odit id.
+          </p>
+        </div>
+        <div className="myprojects">
+          <h1>my projects</h1>
         </div>
       </div>
     </div>

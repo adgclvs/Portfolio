@@ -4,13 +4,28 @@
   justify-content: space-between;
   align-items: center;
 
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+
   h3{
     margin-left: 50px;
+    font-family: $title-font;
   }
 
   ul{
     display: flex;
     width: 20%;
     justify-content: space-around;
+
+    li {
+      font-family: $title-font;
+      color: black;
+    }
+
+    
   }
+}
+
+.header.show {
+  opacity: 1;
 }
