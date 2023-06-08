@@ -1,15 +1,27 @@
 @font-face {
   font-family: "title-font";
-  src: url(../assets/fonts/Lato-Black.ttf);
+  src: url(../assets/fonts/Rubik-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "text-font";
-  src: url(../assets/fonts/Lato-Regular.ttf);
+  src: url(../assets/fonts/Rubik-Regular.ttf);
 }
 
 $title-font: "title-font", sans-serif;
 $text-font: "text-font", sans-serif;
+
+$color-1: black;
+$color-2: grey;
+
+@mixin show-element {
+  opacity: 1;
+}
+
+@mixin hide-element {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
 
 * {
   margin: 0;
@@ -21,3 +33,4 @@ $text-font: "text-font", sans-serif;
   text-decoration: none;
   font-family: $text-font;
 }
+

@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
 
 const Main = () => {
   const [showMain, setShowMain] = useState(false);
+  const [showTech, setShowTech] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowMain(true);
     }, 500);
   }, [showMain]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowTech(true);
+    }, 750);
+  }, [showTech]);
 
   return (
     <div className={`main ${showMain ? "show" : ""}`}>
@@ -21,6 +27,16 @@ const Main = () => {
             Hello, I'm Adrien GONÇALVES. A passionate Front-end React Developer. I study at the
             University of Bordeaux.
           </p>
+          <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
+            <span>
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </span>
+          </a>
+          <a href="https://github.com/adgclvs" target="_blank">
+            <span>
+              <i class="fa-brands fa-github fa-xl"></i>
+            </span>
+          </a>
         </div>
         <img
           src="../assets/img/profile-picture.png"
@@ -30,7 +46,7 @@ const Main = () => {
         />
       </div>
 
-      <div className="technologies">
+      <div className={`technologies ${showTech ? "show" : ""}`}>
         <p>Tech Stack </p>
         <i class="fa-solid fa-pipe fa-beat fa-xl"></i>
         <ul>

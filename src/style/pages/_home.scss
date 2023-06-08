@@ -1,64 +1,5 @@
 .home {
-  .main{
-    height: 100vh;
-
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-    
-    .myself{
-      padding-left: 25%;
-      height: 50%;
-      display: flex;
-      align-items: center;
-
-      .introduce {
-        width: 400px;
-        
-        h1 {
-          margin-bottom: 30px;
-          font-family: $title-font;
-          font-size: 50px;
-        }
-
-        p {
-          font-size: 15px;
-        }
-      }
-
-      img {
-        margin: 50px;
-      }
-
-
-    }
-    
-    .technologies{
-      height: 100px;
-      display: flex;
-      align-items: center;
-      padding-left:25% ;
-
-      p {
-        padding-right:  30px ;
-        font-family: $title-font;
-      }
-
-      ul {
-        padding: 15px;
-        width: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-
-    }
-
-    
-  }
-
-  .main.show {
-    opacity: 1;
-  }
+  
 
   .about {
     background-color: green;
@@ -66,7 +7,7 @@
   }
 
   .myprojects {
-    background-color: orange;
     height: 100vh;
+    justify-content: center;
   }
 }
