@@ -6,12 +6,14 @@ import Project from "../components/Project";
 const Home = () => {
   const [valueScroll, setValueScroll] = useState(0);
 
-  //const project = document.querySelector(".project");
-
   window.addEventListener("scroll", () => {
     setValueScroll(window.scrollY);
     console.log(valueScroll);
   });
+
+  const style = {
+    animation: "myAnimation 1s ease-in-out",
+  };
 
   return (
     <div>
@@ -20,13 +22,21 @@ const Home = () => {
         <Main />
         {/* <About /> */}
         <div className="myprojects">
-          <Project projectId={0} />
-          <Project projectId={1} />
-          <Project projectId={2} />
-
-          {valueScroll > 300 && true}
-          {valueScroll > 500 && true}
-          {valueScroll > 1000 && true}
+          {valueScroll > 250 && (
+            <div style={style}>
+              <Project projectId={0} />
+            </div>
+          )}
+          {valueScroll > 500 && (
+            <div style={style}>
+              <Project projectId={1} />
+            </div>
+          )}
+          {valueScroll > 1000 && (
+            <div style={style}>
+              <Project projectId={2} />
+            </div>
+          )}
         </div>
       </div>
     </div>

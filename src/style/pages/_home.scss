@@ -10,4 +10,15 @@
     height: 100vh;
     justify-content: center;
   }
+
+  @keyframes myAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-500px) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: none scale(1);
+    }
+  }
 }
