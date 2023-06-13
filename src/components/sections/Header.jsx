@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Circles from "../util/Circles";
+import NavPoint from "../util/NavPoint";
 
-const Main = () => {
+const Header = () => {
   const [showMain, setShowMain] = useState(false);
   const [showTech, setShowTech] = useState(false);
 
@@ -17,7 +19,9 @@ const Main = () => {
   }, [showTech]);
 
   return (
-    <div className={`main ${showMain ? "show" : ""}`}>
+    <div className={`header ${showMain ? "show" : ""}`} id="header">
+      <NavPoint />
+      <Circles />
       <div className="myself">
         <div className="introduce">
           <h1>
@@ -71,4 +75,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Header;

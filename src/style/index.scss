@@ -1,5 +1,13 @@
 @import "./settings";
+@import "./pages/home";
+
 @import "./components/header";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/skills";
+@import "./components/contact";
+
+@import "./components/navbar";
+@import "./components/navpoint";
+
 @import "./components/project";
-@import "./components/main";
-@import "./pages/home"
