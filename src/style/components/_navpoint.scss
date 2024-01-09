@@ -12,11 +12,14 @@
       padding: 10px;
       background-color: rgba(195, 244, 255,0);
       color: grey;
+      
     }
     
-    button:hover, .point.active {
+    .point.active {
       color: black;
     }
+
+    
   }
 
 }
