@@ -1,20 +1,22 @@
 .nav-point {
-  width: 30px;
-  position: relative;
-  left: 98%;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  right: 0;
   
   
-
-  button {
-    padding: 10px;
-    background-color: rgba(195, 244, 255,0);
-    color: grey;
-  }
-
-  button:hover, #button {
-    color: black;
+  ul {
+    display: flex;
+    flex-direction: column;
+    button {
+      padding: 10px;
+      background-color: rgba(195, 244, 255,0);
+      color: grey;
+    }
+    
+    button:hover, .point.active {
+      color: black;
+    }
   }
 
 }

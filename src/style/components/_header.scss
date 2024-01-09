@@ -1,8 +1,7 @@
 .header{
   @include hide-element;
-
-  height: 100vh;
   background-color: red;
+  height: 100vh;
   
   .myself{
     padding-left: 25%;

@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import { default as React, forwardRef, useEffect, useRef, useState } from "react";
 import Circles from "../util/Circles";
-import NavPoint from "../util/NavPoint";
 
-const Header = () => {
+const Header = forwardRef((props, ref) => {
   const [showMain, setShowMain] = useState(false);
   const [showTech, setShowTech] = useState(false);
 
@@ -20,7 +19,6 @@ const Header = () => {
 
   return (
     <div className={`header ${showMain ? "show" : ""}`} id="header">
-      <NavPoint />
       <Circles />
       <div className="myself">
         <div className="introduce">
@@ -73,6 +71,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Header;

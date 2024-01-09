@@ -1,11 +1,10 @@
 .project {
-  width: 800px;
-  height: 250px;
+  width: 40vw;
   display: flex;
-  text-align: center;
   align-items: center;
-  margin: 100px 25%;
-  
+  justify-content: center;
+  background-color: yellow;
+  padding-bottom: 3rem;
 
   h1 {
     margin: 20px;
@@ -57,4 +56,3 @@
     }
   }
 }
-

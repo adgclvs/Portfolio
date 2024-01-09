@@ -1,10 +1,8 @@
-import React from "react";
-import NavPoint from "../util/NavPoint";
+import { default as React, forwardRef } from "react";
 
-const Skills = () => {
+const Skills = forwardRef((props, ref) => {
   return (
     <div className="skills" id="skills">
-      <NavPoint />
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi vel sunt quae consequatur,
       odit quam dolorum eligendi ex nobis quia, nihil, facere magni dolor inventore itaque sit vero
       a quod voluptas. Omnis, ab labore unde rem quia provident expedita quam aliquid illum suscipit
@@ -48,6 +46,6 @@ const Skills = () => {
       id sapiente vero accusamus amet quam assumenda facilis, quidem delectus recusandae.
     </div>
   );
-};
+});
 
 export default Skills;

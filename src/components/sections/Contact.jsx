@@ -1,10 +1,8 @@
-import React from "react";
-import NavPoint from "../util/NavPoint";
+import { default as React, forwardRef } from "react";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
     <div className="contact" id="contact">
-      <NavPoint />
       <div className="form-container">
         <form>
           <label>Name</label>
@@ -19,6 +17,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Contact;

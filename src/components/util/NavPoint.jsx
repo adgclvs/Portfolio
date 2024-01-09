@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-const NavPoint = () => {
+const NavPoint = ({ sectionIndex }) => {
+  const valueScroll = 0;
+
   const [computedStyleHeader, setComputedStyleHeader] = useState(null);
   const [computedStyleAbout, setComputedStyleAbout] = useState(null);
   const [computedStyleProjects, setComputedStyleProjects] = useState(null);
   const [computedStyleSkills, setComputedStyleSkills] = useState(null);
-
-  const [valueScroll, setValueScroll] = useState(0);
 
   useEffect(() => {
     const header = document.getElementById("header");
@@ -26,14 +26,11 @@ const NavPoint = () => {
     setComputedStyleSkills(computedStyleSkills);
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => setValueScroll(window.scrollY));
-  }, []);
-
   return (
-    <div className="nav-point">
+    <div className={`nav-point`}>
       <ul>
         <button
+          className={`point ${sectionIndex === 0 ? "active" : ""}`}
           id={valueScroll < 450 ? "button" : ""}
           onClick={() => {
             window.scrollTo({
@@ -46,6 +43,7 @@ const NavPoint = () => {
           <i class="fa-solid fa-circle fa-2xs"></i>
         </button>
         <button
+          className={`point ${sectionIndex === 1 ? "active" : ""}`}
           id={valueScroll < 1400 && valueScroll > 450 ? "button" : ""}
           onClick={() => {
             window.scrollTo({
@@ -58,8 +56,8 @@ const NavPoint = () => {
           <i class="fa-solid fa-circle fa-2xs"></i>
         </button>
         <button
+          className={`point ${sectionIndex === 2 ? "active" : ""}`}
           id={valueScroll < 2050 && valueScroll > 1400 ? "button" : ""}
-          // ATTENTION ici peut-etre que lorsque la taille de myprojects sera plus grande que 100vh il faudra chager les valeur pour le scroll
           onClick={() => {
             window.scrollTo({
               top: parseInt(computedStyleHeader.height) + parseInt(computedStyleAbout.height),
@@ -71,6 +69,7 @@ const NavPoint = () => {
           <i class="fa-solid fa-circle fa-2xs"></i>
         </button>
         <button
+          className={`point ${sectionIndex === 3 ? "active" : ""}`}
           id={valueScroll < 3500 && valueScroll > 2050 ? "button" : ""}
           onClick={() => {
             window.scrollTo({
@@ -86,6 +85,7 @@ const NavPoint = () => {
           <i class="fa-solid fa-circle fa-2xs"></i>
         </button>
         <button
+          className={`point ${sectionIndex === 4 ? "active" : ""}`}
           id={valueScroll > 3500 ? "button" : ""}
           onClick={() => {
             window.scrollTo({

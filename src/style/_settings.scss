@@ -32,8 +32,10 @@ $color-2: grey;
   border: none;
   text-decoration: none;
   font-family: $text-font;
+  user-select: none;
 }
 
 body {
   background-color: rgba(195, 244, 255,0.5);
+  overflow: hidden;
 }

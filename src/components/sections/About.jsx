@@ -1,10 +1,8 @@
-import React from "react";
-import NavPoint from "../util/NavPoint";
+import { default as React, forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <div className="about" id="about">
-      <NavPoint />
+    <div className="about" ref={ref} id="about">
       <h2>Me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi fugit quo rerum nihil?
@@ -13,6 +11,6 @@ const About = () => {
       </p>
     </div>
   );
-};
+});
 
 export default About;
