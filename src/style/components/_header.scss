@@ -14,7 +14,7 @@
       h1 {
         margin-bottom: 3rem;
         font-family: $title-font;
-        font-size: 50px;
+        font-size: 45px;
       }
 
       p {
@@ -45,7 +45,6 @@
   
   .technologies{
     @include hide-element;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +53,15 @@
     p {
       padding-right:  3rem ;
       font-family: $title-font;
+    }
+
+    .pipe{
+
+      height: 100%;
+      i {
+        font-size: xx-large;
+        
+      }
     }
 
     ul {

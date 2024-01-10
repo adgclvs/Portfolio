@@ -1,3 +1,26 @@
 .about {
   height: 100vh;
+
+  .about-content {
+    height: 80vh;
+    width: 70vw;
+    position: relative;
+    top: 50%; /* Ajustez selon vos besoins */
+    left: 50%; /* Ajustez selon vos besoins */
+    transform: translate(-50%, -50%); /* Centrage horizontal et vertical */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .professional, .personal {
+      height: 90%;
+      width: 45%;
+      // text-align: center;
+
+      h1 {
+        text-align: center;
+        padding: 1rem 0;
+    }
+  }
+  }
 }

@@ -23,11 +23,12 @@ const Header = () => {
       <div className="myself">
         <div className="introduce">
           <h1>
-            Front-End React <br /> Developer
+            Student Blockchain <br /> Developer
           </h1>
           <p>
-            Hello, I'm Adrien GONÇALVES. A passionate Front-end React Developer. I study at the
-            University of Bordeaux.
+            Hello, I am Adrien Gonçalves, a 20-year-old passionate about blockchain. I am currently
+            studying information technology at the University of Bordeaux, and my goal is to become
+            a blockchain engineer in the future.
           </p>
           <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
             <span>
@@ -50,7 +51,9 @@ const Header = () => {
 
       <div className={`technologies ${showTech ? "show" : ""}`}>
         <p>Tech Stack </p>
-        <i class="fa-solid fa-pipe fa-beat fa-xl"></i>
+        <div className="pipe">
+          <i class="fa-solid fa-pipe"></i>
+        </div>
         <ul>
           <li>
             <img src="../assets/img/icon-html.png" alt="Logo HTML" width="25px" height="25px" />
