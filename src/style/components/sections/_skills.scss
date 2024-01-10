@@ -3,12 +3,15 @@
 
   .skills-content {
     height: 80vh;
-    width: 70vw;
+    width: 90vw;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
+
   }
 }

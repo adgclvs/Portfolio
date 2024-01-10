@@ -10,6 +10,15 @@ const Skills = () => {
         <Skill skillId={0} />
         <Skill skillId={1} />
         <Skill skillId={2} />
+        <Skill skillId={0} />
+        <Skill skillId={1} />
+        <Skill skillId={2} />
+        <Skill skillId={0} />
+        <Skill skillId={1} />
+        <Skill skillId={2} />
+        <Skill skillId={0} />
+        <Skill skillId={1} />
+        <Skill skillId={2} />
       </div>
     </div>
   );

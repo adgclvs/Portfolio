@@ -2,12 +2,12 @@ export const skillsData = [
   {
     id: 0,
     title: "React",
-    description: "qsdhfjkqshdkfghqskgqsgjkqsfghqsdfkqsdjk",
+    description: "qsdhfjkqshdkf ghqskgqsgjkqsf ghqsdfkqsdjk",
   },
   {
     id: 1,
     title: "Sass",
-    desiption: "qsjdhfqshdfhqsd",
+    description: "qsjdhfqshdfhqsd",
   },
   {
     id: 2,
