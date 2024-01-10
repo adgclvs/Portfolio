@@ -1,13 +1,12 @@
 @import "./settings";
 @import "./pages/home";
 
-@import "./components/header";
-@import "./components/about";
-@import "./components/projects";
-@import "./components/skills";
-@import "./components/contact";
+@import "./components/sections/header";
+@import "./components/sections/about";
+@import "./components/sections/projects";
+@import "./components/sections/skills";
+@import "./components/sections/contact";
 
-@import "./components/navbar";
-@import "./components/navpoint";
-
-@import "./components/project";
+@import "./components/util/navbar";
+@import "./components/util/navpoint";
+@import "./components/util/project";
