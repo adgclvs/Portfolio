@@ -1,8 +1,10 @@
-import { default as React, forwardRef } from "react";
+import React from "react";
+import Circles from "../util/Circles";
 
-const Contact = forwardRef((props, ref) => {
+const Contact = () => {
   return (
     <div className="contact" id="contact">
+      <Circles indexSection={4} />
       <div className="form-container">
         <form>
           <label>Name</label>
@@ -17,6 +19,6 @@ const Contact = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default Contact;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Circles = () => {
+const Circles = ({ indexSection }) => {
   const [circles, setCircles] = useState([]);
 
   useEffect(() => {
@@ -8,7 +8,9 @@ const Circles = () => {
       const newCircles = [];
       for (let i = 0; i < 6; i++) {
         const size = Math.floor(Math.random() * 500);
-        const top = Math.floor(Math.random() * (window.innerHeight - size));
+        const top =
+          Math.floor(Math.random() * (window.innerHeight - size)) +
+          indexSection * window.innerHeight;
         const left = Math.floor(Math.random() * (window.innerWidth - size));
 
         newCircles.push({

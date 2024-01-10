@@ -1,8 +1,10 @@
-import { default as React, forwardRef } from "react";
+import React from "react";
+import Circles from "../util/Circles";
 
-const About = forwardRef((props, ref) => {
+const About = () => {
   return (
-    <div className="about" ref={ref} id="about">
+    <div className="about">
+      <Circles indexSection={1} />
       <h2>Me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi fugit quo rerum nihil?
@@ -11,6 +13,6 @@ const About = forwardRef((props, ref) => {
       </p>
     </div>
   );
-});
+};
 
 export default About;

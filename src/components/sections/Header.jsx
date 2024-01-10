@@ -1,7 +1,7 @@
-import { default as React, forwardRef, useEffect, useRef, useState } from "react";
+import { default as React, useEffect, useState } from "react";
 import Circles from "../util/Circles";
 
-const Header = forwardRef((props, ref) => {
+const Header = () => {
   const [showMain, setShowMain] = useState(false);
   const [showTech, setShowTech] = useState(false);
 
@@ -19,7 +19,7 @@ const Header = forwardRef((props, ref) => {
 
   return (
     <div className={`header ${showMain ? "show" : ""}`} id="header">
-      <Circles />
+      <Circles indexSection={0} />
       <div className="myself">
         <div className="introduce">
           <h1>
@@ -71,6 +71,6 @@ const Header = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default Header;

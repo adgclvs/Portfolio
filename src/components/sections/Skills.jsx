@@ -1,8 +1,10 @@
-import { default as React, forwardRef } from "react";
+import React from "react";
+import Circles from "../util/Circles";
 
-const Skills = forwardRef((props, ref) => {
+const Skills = () => {
   return (
     <div className="skills" id="skills">
+      <Circles indexSection={3} />
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi vel sunt quae consequatur,
       odit quam dolorum eligendi ex nobis quia, nihil, facere magni dolor inventore itaque sit vero
       a quod voluptas. Omnis, ab labore unde rem quia provident expedita quam aliquid illum suscipit
@@ -46,6 +48,6 @@ const Skills = forwardRef((props, ref) => {
       id sapiente vero accusamus amet quam assumenda facilis, quidem delectus recusandae.
     </div>
   );
-});
+};
 
 export default Skills;
