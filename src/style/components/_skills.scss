@@ -1,3 +1,14 @@
 .skills {
   height: 100vh;
+
+  .skills-content {
+    height: 80vh;
+    width: 70vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+  }
 }
