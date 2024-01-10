@@ -3,11 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
   padding-bottom: 3rem;
 
   h1 {
-    margin: 20px;
+    margin: 2rem;
     font-size: 20px;
     font-family: $title-font;
     display: flex;
@@ -25,7 +24,7 @@
     align-items: center;
 
     p{
-      margin: 0 15px;
+      margin: 0 1rem;
       width: 70%;
     color: $color-2;
     }
@@ -34,7 +33,7 @@
       width: 50%;
       display: flex;
       justify-content: space-around;
-      margin: 20px;
+      margin: 1.5rem;
       
       li {
         font-family: $title-font;
@@ -47,7 +46,7 @@
       justify-content: space-around;
       
       a{
-        color: black;
+        color: $color-1;
       }
 
       a:hover {
