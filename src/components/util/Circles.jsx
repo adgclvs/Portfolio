@@ -42,7 +42,7 @@ const Circles = ({ indexSection }) => {
               left: `${circle.left}px`,
               borderRadius: "50%",
               backgroundColor: `rgba(128, 128, 128, 0.1)`,
-              zIndex: index + 1,
+              zIndex: -1,
             }}
           ></div>
         );

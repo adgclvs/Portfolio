@@ -32,6 +32,7 @@ const Header = () => {
               is to become a blockchain engineer in the future.
             </p>
             <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
+              {"  "}
               <span>
                 <i class="fa-brands fa-linkedin fa-xl"></i>
               </span>
