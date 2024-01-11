@@ -1,83 +1,86 @@
 .header{
   @include hide-element;
   height: 100vh;
-  
-  .myself{
-    height: 50vh;
+
+  .header-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
-    .introduce {
-      width: 30rem;
+    .myself{
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
-      h1 {
-        margin-bottom: 3rem;
-        font-family: $title-font;
-        font-size: 45px;
-      }
-
-      p {
-        font-size: 15px;
-        color: $color-2;
-        padding-bottom: 2.5rem;
-      }
-
-      a{
-        color: $color-1;
-      }
-
-      i {
-        margin-right: 1rem;
-      }
-
-      i:hover {
-        transform: scale(1.2);
-      }
+      .introduce {
+        width: 30rem;
+        
+        h1 {
+          margin-bottom: 3rem;
+          font-family: $title-font;
+          font-size: 45px;
+        }
+        
+        p {
+          font-size: 15px;
+          color: $color-2;
+          padding-bottom: 2.5rem;
+        }
+        
+        a{
+          color: $color-1;
+        }
+        
+        i {
+          margin-right: 1rem;
+        }
+        
+        i:hover {
+          transform: scale(1.2);
+        }
     }
-
+    
     img {
       margin: 5rem;
     }
-
-
+    
+    
   }
   
   .technologies{
     @include hide-element;
+    width: 50vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
 
     p {
-      padding-right:  3rem ;
+      padding-right:  2rem ;
       font-family: $title-font;
+      font-size: larger;
+      display: flex;
+      align-items: center;
     }
-
-    .pipe{
-
-      height: 100%;
-      i {
-        font-size: xx-large;
-        
-      }
-    }
-
+    
+    
     ul {
-      padding: 1rem;
-      width: 30vw;
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      li {
+        padding: 1rem;
+      }
     }
-
+    
   }
-
+  
   .technologies.show{
     @include show-element
   }
   
+}
 }
 
 .header.show {
