@@ -9,14 +9,22 @@ const Navbar = () => {
     }, 250);
   }, [showNavbar]);
 
+  const handleClick = (index) => {
+    window.scrollTo({
+      top: index * window.innerHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={`navbar ${showNavbar ? "show" : ""}`}>
       <h3>Adrien.dev</h3>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li onClick={() => handleClick(0)}>Home</li>
+        <li onClick={() => handleClick(1)}>About</li>
+        <li onClick={() => handleClick(2)}>Projects</li>
+        <li onClick={() => handleClick(3)}>Skills</li>
+        <li onClick={() => handleClick(4)}>Contact</li>
       </ul>
     </div>
   );
