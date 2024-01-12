@@ -10,7 +10,7 @@
     
     .myself{
       width: 100%;
-      height: 50vh;
+      height: 65vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -56,7 +56,7 @@
   
   .technologies{
     @include hide-element;
-    width: 50vw;
+    width: 40vw;
     display: flex;
 
     p {

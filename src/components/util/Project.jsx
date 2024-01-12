@@ -32,7 +32,10 @@ const Project = ({ projectId }) => {
           <a href={currentProject.link} target="_blank">
             Live Demo{" "}
             <span>
-              <i class="fa-regular fa-arrow-up-right-from-square"></i>
+              <i
+                className="fa-solid fa-arrow-up-right-from-square"
+                style={{ color: "#000000" }}
+              ></i>
             </span>
           </a>
         </div>

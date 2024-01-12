@@ -34,12 +34,12 @@ const Header = () => {
             <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
               {"  "}
               <span>
-                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <i className="fa-brands fa-linkedin fa-xl"></i>
               </span>
             </a>
             <a href="https://github.com/adgclvs" target="_blank">
               <span>
-                <i class="fa-brands fa-github fa-xl"></i>
+                <i className="fa-brands fa-github fa-xl"></i>
               </span>
             </a>
           </div>

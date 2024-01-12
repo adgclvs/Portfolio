@@ -28,8 +28,6 @@ const Circles = ({ indexSection }) => {
   return (
     <div>
       {circles.map((circle, index) => {
-        const color = `rgb(${index * 50}, ${index * 50}, ${index * 50})`;
-
         return (
           <div
             key={index}

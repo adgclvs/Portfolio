@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../util/Button";
 import Circles from "../util/Circles";
 
 const About = () => {
@@ -53,6 +54,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <Button index={0} />
     </div>
   );
 };
