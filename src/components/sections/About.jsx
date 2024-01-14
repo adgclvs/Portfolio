@@ -54,7 +54,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Button index={0} />
+      <Button index={0} page={"about"} />
     </div>
   );
 };

@@ -57,10 +57,12 @@ const Home = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("wheel", handleWheel);
+    document.body.style.overflow = "hidden";
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("wheel", handleWheel);
+      document.body.style.overflow = "auto";
     };
   }, [currentHeight, canScroll]);
 

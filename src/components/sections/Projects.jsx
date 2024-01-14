@@ -13,7 +13,7 @@ const Projects = () => {
         <Project projectId={1} />
         <Project projectId={2} />
       </div>
-      <Button index={0} />
+      <Button index={0} page={"my-projects"} />
     </div>
   );
 };
