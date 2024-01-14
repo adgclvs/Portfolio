@@ -30,11 +30,11 @@ const Button = ({ index, page }) => {
   };
 
   return (
-    <div className="button" onClick={handleClick}>
-      <NavLink to={to}>
+    <NavLink to={to} onClick={handleClick}>
+      <div className="button">
         <h1>{buttonText}</h1>
-      </NavLink>
-    </div>
+      </div>
+    </NavLink>
   );
 };
 
