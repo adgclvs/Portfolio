@@ -7,7 +7,8 @@ const Skill = ({ skillId }) => {
   return (
     <div className="skill">
       <h1>{currentskill.title}</h1>
-      <p>{currentskill.description}</p>
+      <p>{currentskill.text}</p>
+      <img src={currentskill.img} alt={`Logo ` + currentskill.title} height="25px" width="25px" />
     </div>
   );
 };

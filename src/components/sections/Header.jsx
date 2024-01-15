@@ -1,6 +1,20 @@
 import { default as React, useEffect, useState } from "react";
 import Circles from "../util/Circles";
 
+const technologies = [
+  { src: "../assets/img/icon/icon-react.png", alt: "Logo React" },
+  { src: "../assets/img/icon/icon-solidity.png", alt: "Logo Solidity" },
+  { src: "../assets/img/icon/icon-sass.png", alt: "Logo Sass" },
+  { src: "../assets/img/icon/icon-etherscan.png", alt: "Logo EtherScan" },
+  { src: "../assets/img/icon/icon-github.png", alt: "Logo GitHub" },
+];
+
+const TechItem = ({ src, alt }) => (
+  <li>
+    <img src={src} alt={alt} width="25px" height="25px" />
+  </li>
+);
+
 const Header = () => {
   const [showMain, setShowMain] = useState(false);
   const [showTech, setShowTech] = useState(false);
@@ -54,28 +68,9 @@ const Header = () => {
         <div className={`technologies ${showTech ? "show" : ""}`}>
           <p>Tech Stack </p>
           <ul>
-            <li>
-              <img src="../assets/img/icon-react.png" alt="Logo React" width="25px" height="25px" />
-            </li>
-            <li>
-              <img
-                src="../assets/img/icon-solidity.png"
-                alt="Logo Solidity"
-                width="25px"
-                height="25px"
-              />
-            </li>
-            <li>
-              <img src="../assets/img/icon-sass.png" alt="Logo Sass" width="25px" height="25px" />
-            </li>
-            <li>
-              <img
-                src="../assets/img/icon-etherscan.png"
-                alt="Logo EtherScan"
-                width="25px"
-                height="25px"
-              />
-            </li>
+            {technologies.map((tech, index) => (
+              <TechItem key={index} src={tech.src} alt={tech.alt} />
+            ))}
           </ul>
         </div>
       </div>
