@@ -1,35 +1,65 @@
 .navbar {
-  @include hide-element;
 
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-
-
-  h3{
-    margin-left: 3.5rem;
-    font-family: $title-font;
-  }
-
-  ul{
+  .top {
+    @include hide-element;
+    
+    height: 5rem;
+    width: 100%;
     display: flex;
-    width: 25vw;
-    justify-content: space-around;
-
-    li {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+    
+    h3{
+      margin-left: 3.5rem;
       font-family: $title-font;
-      color: $color-1;
     }
     
-    li:hover {
-      transform: scale(1.2);
+    ul{
+      width: 25vw;
+      display: flex;
+      justify-content: space-around;
+      
+      li {
+        font-family: $title-font;
+        color: $color-1;
+      }
+      
+      li:hover {
+        transform: scale(1.2);
+      }
     }
   }
-}
+  
+  .top.show {
+    @include show-element;
+  }
 
-.navbar.show {
-  @include show-element;
+
+  .nav-point {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    right: 0;
+    
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      button {
+        padding: 1rem;
+        background-color: rgba(195, 244, 255,0);
+        color: $color-2;
+        
+      }
+      
+      .point.active {
+        color: $color-1;
+      }
+  
+      
+    }
+  
+  }
 }

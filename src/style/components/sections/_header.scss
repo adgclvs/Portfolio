@@ -25,9 +25,9 @@
         }
         
         p {
+          padding-bottom: 2.5rem;
           font-size: 15px;
           color: $color-2;
-          padding-bottom: 2.5rem;
         }
         
         a{
@@ -60,11 +60,11 @@
     display: flex;
 
     p {
+      display: flex;
+      align-items: center;
       padding-right:  2rem ;
       font-family: $title-font;
       font-size: larger;
-      display: flex;
-      align-items: center;
     }
     
     

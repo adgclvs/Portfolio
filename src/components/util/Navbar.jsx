@@ -69,8 +69,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="test">
-      <div className={`navbar`}>
+    <div className="navbar">
+      <div className={`top`}>
         <h3>Adrien.dev</h3>
         <ul>
           {["Home", "About", "Projects", "Skills", "Contact"].map((item, index) => (

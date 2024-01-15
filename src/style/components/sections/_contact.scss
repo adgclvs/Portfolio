@@ -2,17 +2,17 @@
   height: 100vh;
 
   form {
-    display: grid;
     width: 50vw;
+    display: grid;
     margin: 0 auto;
   }
   .success,
   .error {
     width: 30rem;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 0.5rem;
   }
   .success {
