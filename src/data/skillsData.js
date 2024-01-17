@@ -2,7 +2,7 @@ export const skillsData = [
   {
     id: 0,
     title: "React",
-    text: "",
+    text: "J'ai appris le react en autodidact",
     img: "../assets/img/icon/icon-react.png",
     other: "",
   },
