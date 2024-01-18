@@ -1,22 +1,49 @@
-import React from "react";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import Circles from "../util/Circles";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formMess = document.querySelector(".form-message");
+
+    emailjs
+      .sendForm("service_4i0myye", "template_m9v2xlc", form.current, process.env.REACT_APP_ID)
+      .then(
+        (result) => {
+          form.current.reset();
+          formMess.innerHTML = "<p class='success'>Message envoyé !</p>";
+
+          setTimeout(() => {
+            formMess.innerHTML = "";
+          }, 2500);
+        },
+        (error) => {
+          formMess.innerHTML = "<p class='error'>Une erreur s'est produite, veuille réessayer</p>";
+          setTimeout(() => {
+            formMess.innerHTML = "";
+          }, 2500);
+        }
+      );
+  };
+
   return (
     <div className="contact" id="contact">
       <Circles indexSection={4} />
       <div className="form-container">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="name" required autoComplete="off" />
           <label>Email</label>
           <input type="email" name="email" required autoComplete="off" />
           <label>Message</label>
-          <textarea name="message" required />
+          <textarea name="message" />
           <input type="submit" value="Envoyer" />
         </form>
-        <div className="form-message"></div>
       </div>
+      <div className="form-message"></div>
     </div>
   );
 };
