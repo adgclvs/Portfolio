@@ -1,25 +1,39 @@
 .about {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about-page {
+  width: 100vw;
+  height: 90vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end; 
+  position: relative; 
+  
   .about-content {
-    height: 80vh;
+    height: 90vh;
     width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 10rem;
-    position: relative;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-
+    
     .professional, .personal {
       height: 90%;
       width: 45%;
-
+      
       h1 {
         text-align: center;
         padding: 1rem 0;
+      }
     }
   }
+
+  .about-button {
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
   }
 }

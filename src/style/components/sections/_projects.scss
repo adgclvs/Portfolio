@@ -1,12 +1,22 @@
 .projects {
   height: 100vh;
 
+  .projects-content{
+    position: relative;
+  }
+  
     .myprojects{
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: center;      
     }
+    
+    .projects-button {
+      position: absolute; 
+      bottom: 10px; 
+      left: 10px; 
+    }
+  }
   
-}

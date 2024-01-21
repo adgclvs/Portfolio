@@ -9,7 +9,6 @@ const Allprojects = () => {
         <Project projectId={0} />
         <Project projectId={1} />
         <Project projectId={2} />
-        <Project projectId={2} />
       </div>
       <Button index={1} page={"projects"} />
     </div>

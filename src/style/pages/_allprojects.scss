@@ -1,2 +1,10 @@
 .allprojects {
+  margin-top: 5rem;
+
+    .allprojects-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 }

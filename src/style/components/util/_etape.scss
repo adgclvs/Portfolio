@@ -1,0 +1,17 @@
+.etape {
+  border: 2px solid black; 
+  margin: 10px 0; // Espacement entre les étapes
+  padding: 20px;
+  width: 200px; // Largeur fixe pour chaque étape
+  text-align: center;
+  position: relative; // Pour les pseudo-éléments de connexion
+
+  &.gauche {
+    align-self: flex-start;
+  }
+
+  &.droite {
+    align-self: flex-end;
+  }
+
+}
