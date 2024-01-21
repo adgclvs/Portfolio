@@ -1,26 +1,67 @@
 .contact {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 
-  form {
-    width: 50vw;
-    display: grid;
-    margin: 0 auto;
-    margin-top: 20rem;
+  .form-container {
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        &:focus {
+          border-color: #007bff;
+        }
+      }
+
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+          background: #0056b3;
+        }
+      }
+    }
   }
-  .success,
-  .error {
-    width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 0.5rem;
+
+  .form-message {
+    margin-top: 10px;
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
   }
-  .success {
-    background: green;
-  }
-  .error {
-    background: red;
-  }
-  
 }

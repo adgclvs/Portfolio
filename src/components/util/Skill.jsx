@@ -10,10 +10,21 @@ const Skill = ({ skillId }) => {
         <div className="skill-image">
           <img src={currentskill.img} alt={`Logo ` + currentskill.title} />
         </div>
+        <div className="skill-title">
+          <h4>{currentskill.title}</h4>
+        </div>
       </div>
       <div className="skill-content">
-        <p>{currentskill.text}</p>
-        <p>{currentskill.other}</p>
+        <div className="skill-project-count">
+          <h4>
+            {currentskill.project_count === "1"
+              ? currentskill.project_count + " project"
+              : currentskill.project_count + " projects"}
+          </h4>
+        </div>
+        <div className="skill-time">
+          <h4>Since {currentskill.time} </h4>
+        </div>
       </div>
     </div>
   );
