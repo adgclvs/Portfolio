@@ -1,4 +1,6 @@
 import React from "react";
+import { aboutPersonalData } from "../../data/aboutPersonalData";
+import { aboutProfessionalData } from "../../data/aboutProfessionalData";
 import Button from "../util/Button";
 import Circles from "../util/Circles";
 import Roadmap from "../util/Roadmap";
@@ -11,18 +13,11 @@ const About = () => {
         <div className="about-content">
           <div className="professional">
             <h1>Professional</h1>
-            <Roadmap
-              list={[
-                { titre: "Mon Bac", position: "gauche" },
-                { titre: "Première Année", position: "droite" },
-                { titre: "Seconde Année", position: "gauche" },
-                { titre: "Troisième Année", position: "droite" },
-              ]}
-            />
+            <Roadmap data={aboutProfessionalData} />
           </div>
           <div className="personal">
             <h1>Personal</h1>
-            <Roadmap />
+            <Roadmap data={aboutPersonalData} />
           </div>
         </div>
         <div className="about-button">

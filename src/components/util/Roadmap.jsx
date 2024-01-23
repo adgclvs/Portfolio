@@ -1,11 +1,12 @@
 import React from "react";
 import Etape from "./Etape";
 
-const Roadmap = ({ list = [] }) => {
+const Roadmap = ({ data = [] }) => {
+  console.log(data);
   return (
     <div className="roadmap">
-      {list.map((item, index) => (
-        <Etape key={index} titre={item.titre} position={item.position} />
+      {data.map((item, index) => (
+        <Etape key={index} object={item} />
       ))}
     </div>
   );
