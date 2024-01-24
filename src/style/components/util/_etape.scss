@@ -2,18 +2,55 @@
   border: 2px solid black;
   margin: 10px 0; 
   padding: 20px;
-  width: 200px; 
+  width: 23rem; 
   height: 10rem;
   text-align: center;
   position: relative; 
   transition: all 0.3s ease; 
+  border-radius: 1rem;
+
+  .etape-point {
+    background-color: rgb(247, 247, 247);
+    border: 0.5px solid black;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .etape-date {
+    font-size: large;
+    height: 2rem;
+    width: 5rem;
+    position: relative;
+    top: -5px;
+  }
 
   &.gauche {
     align-self: flex-start;
+
+    .etape-point{
+      left: 340px;
+    }
+
+    .etape-date{
+      left: 380px;
+    }
   }
 
   &.droite {
     align-self: flex-end;
+
+    .etape-point{
+      right: 83px;
+    }
+
+    .etape-date{
+      right: 160px;
+    }
   }
 
   .default-content,
@@ -42,4 +79,6 @@
       opacity: 1;
     }
   }
+
+  
 }

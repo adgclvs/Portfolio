@@ -8,6 +8,7 @@ const Roadmap = ({ data = [] }) => {
       {data.map((item, index) => (
         <Etape key={index} object={item} />
       ))}
+      <div className="midle-line"></div>
     </div>
   );
 };

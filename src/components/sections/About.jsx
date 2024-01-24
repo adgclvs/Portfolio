@@ -20,9 +20,7 @@ const About = () => {
             <Roadmap data={aboutPersonalData} />
           </div>
         </div>
-        <div className="about-button">
-          <Button index={0} page={"my-life"} />
-        </div>
+        <div className="about-button">{/* <Button index={0} page={"my-life"} /> */}</div>
       </div>
     </div>
   );

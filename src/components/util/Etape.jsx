@@ -10,6 +10,8 @@ const Etape = ({ object }) => {
       <div className="hover-content">
         <p>{object.text}</p>
       </div>
+      <div className="etape-point"></div>
+      <div className="etape-date">{object.date}</div>
     </div>
   );
 };

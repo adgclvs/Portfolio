@@ -23,21 +23,25 @@ const Project = ({ projectId }) => {
           })}
         </div>
         <div className="project-link">
-          <a href={currentProject.github} target="_blank">
-            Code{" "}
-            <span>
-              <i class="fa-brands fa-github fa-xl"></i>
-            </span>
-          </a>
-          <a href={currentProject.link} target="_blank">
-            Live Demo{" "}
-            <span>
-              <i
-                className="fa-solid fa-arrow-up-right-from-square"
-                style={{ color: "#000000" }}
-              ></i>
-            </span>
-          </a>
+          {currentProject.github !== "" && (
+            <a href={currentProject.github} target="_blank">
+              Code{" "}
+              <span>
+                <i class="fa-brands fa-github fa-xl"></i>
+              </span>
+            </a>
+          )}
+          {currentProject.link !== "" && (
+            <a href={currentProject.link} target="_blank">
+              Live Demo{" "}
+              <span>
+                <i
+                  className="fa-solid fa-arrow-up-right-from-square"
+                  style={{ color: "#000000" }}
+                ></i>
+              </span>
+            </a>
+          )}
         </div>
       </div>
       {!positionImg && <img src={currentProject.img} alt={`Picture of ${currentProject.title}`} />}

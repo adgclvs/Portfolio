@@ -6,7 +6,7 @@
 }
 
 .about-page {
-  width: 100vw;
+  width: 90vw;
   height: 90vh; 
   display: flex;
   justify-content: center; 
@@ -14,19 +14,17 @@
   position: relative; 
   
   .about-content {
-    height: 90vh;
-    width: 70vw;
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     
     .professional, .personal {
-      height: 90%;
-      width: 45%;
-      
       h1 {
         text-align: center;
         padding: 1rem 0;
+        margin-bottom: 1rem;
       }
     }
   }
