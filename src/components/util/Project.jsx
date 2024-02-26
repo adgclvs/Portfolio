@@ -6,10 +6,10 @@ const Project = ({ projectId }) => {
   const [positionImg, setPositionImg] = useState(false);
 
   useEffect(() => {
-    if (currentProject.id % 2 == 0) {
+    if (currentProject.id % 2 === 0) {
       setPositionImg(true);
     }
-  }, []);
+  });
 
   return (
     <div className="project">

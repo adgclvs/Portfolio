@@ -1,7 +1,6 @@
 import React from "react";
 import { aboutPersonalData } from "../../data/aboutPersonalData";
 import { aboutProfessionalData } from "../../data/aboutProfessionalData";
-import Button from "../util/Button";
 import Circles from "../util/Circles";
 import Roadmap from "../util/Roadmap";
 

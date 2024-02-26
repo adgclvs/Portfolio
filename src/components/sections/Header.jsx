@@ -2,11 +2,11 @@ import { default as React, useEffect, useState } from "react";
 import Circles from "../util/Circles";
 
 const technologies = [
-  { src: "../assets/img/icon/icon-react.png", alt: "Logo React" },
-  { src: "../assets/img/icon/icon-solidity.png", alt: "Logo Solidity" },
-  { src: "../assets/img/icon/icon-sass.png", alt: "Logo Sass" },
-  { src: "../assets/img/icon/icon-etherscan.png", alt: "Logo EtherScan" },
-  { src: "../assets/img/icon/icon-github.png", alt: "Logo GitHub" },
+  { src: "../assets/img/icon/icon-react.png", alt: "React" },
+  { src: "../assets/img/icon/icon-solidity.png", alt: "Solidity" },
+  { src: "../assets/img/icon/icon-sass.png", alt: "Sass" },
+  { src: "../assets/img/icon/icon-etherscan.png", alt: "EtherScan" },
+  { src: "../assets/img/icon/icon-github.png", alt: "GitHub" },
 ];
 
 const TechItem = ({ src, alt }) => (
@@ -45,24 +45,23 @@ const Header = () => {
               blockchain. I am currently studying information technology at the University of
               Bordeaux, with the aim of becoming a blockchain engineer in the future.
             </p>
-            <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/adrien-goncalves-769043267/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {"  "}
               <span>
                 <i className="fa-brands fa-linkedin fa-xl"></i>
               </span>
             </a>
-            <a href="https://github.com/adgclvs" target="_blank">
+            <a href="https://github.com/adgclvs" target="_blank" rel="noopener noreferrer">
               <span>
                 <i className="fa-brands fa-github fa-xl"></i>
               </span>
             </a>
           </div>
-          <img
-            src="../assets/img/profile_picture.png"
-            alt="Photo de profile"
-            width="300px"
-            height="300px"
-          />
+          <img src="../assets/img/profile_picture.png" alt="profile" width="300px" height="300px" />
         </div>
 
         <div className={`technologies ${showTech ? "show" : ""}`}>
