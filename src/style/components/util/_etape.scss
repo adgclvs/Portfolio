@@ -2,7 +2,7 @@
   border: 2px solid black;
   margin: 10px 0; 
   padding: 20px;
-  width: 23rem; 
+  width: 22rem; 
   height: 10rem;
   text-align: center;
   position: relative; 
@@ -12,7 +12,7 @@
   .etape-point {
     background-color: rgb(247, 247, 247);
     border: 0.5px solid black;
-    position: relative;
+    position: absolute;
     height: 3rem;
     width: 3rem;
     border-radius: 3rem;
@@ -25,31 +25,38 @@
     font-size: large;
     height: 2rem;
     width: 5rem;
-    position: relative;
+    position: absolute;
     top: -5px;
   }
 
   &.gauche {
     align-self: flex-start;
-
+    position: relative;
+    right: 10px;
+    margin-right: 10px;
     .etape-point{
-      left: 340px;
+      left: 360px;
     }
 
     .etape-date{
-      left: 380px;
+      left: 400px;
+      top: 65px;
     }
   }
 
   &.droite {
     align-self: flex-end;
+    position: relative;
+    left: 10px;
+    margin-left: 10px;
 
     .etape-point{
-      right: 83px;
+      right: 360px;
     }
 
     .etape-date{
-      right: 160px;
+      right: 400px;
+      top: 65px;
     }
   }
 

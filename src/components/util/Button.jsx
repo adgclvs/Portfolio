@@ -6,19 +6,19 @@ const Button = ({ index, page }) => {
   switch (page) {
     case "about":
       to = "/";
-      buttonText = index === 0 ? "Watch more" : "Return";
+      buttonText = index === 0 ? "More" : "Return";
       break;
     case "my-life":
       to = "my-life";
-      buttonText = index === 0 ? "Watch more" : "Return";
+      buttonText = index === 0 ? "More" : "Return";
       break;
     case "projects":
       to = "/";
-      buttonText = index === 0 ? "Watch more" : "Return";
+      buttonText = index === 0 ? "More" : "Return";
       break;
     case "my-projects":
       to = "my-projects";
-      buttonText = index === 0 ? "Watch more" : "Return";
+      buttonText = index === 0 ? "More" : "Return";
       break;
     default:
       to = "";

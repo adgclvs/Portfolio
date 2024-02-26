@@ -41,9 +41,9 @@ const Header = () => {
               Student Blockchain <br /> Developer
             </h1>
             <p>
-              Hello, I am Adrien Gonçalves, a 20-year-old passionate about blockchain. I am
-              currently studying information technology at the University of Bordeaux, and my goal
-              is to become a blockchain engineer in the future.
+              Hello, my name is Adrien Goncalves, and I am a 20-year-old who is passionate about
+              blockchain. I am currently studying information technology at the University of
+              Bordeaux, with the aim of becoming a blockchain engineer in the future.
             </p>
             <a href="https://www.linkedin.com/in/adrien-goncalves-769043267/" target="_blank">
               {"  "}
@@ -58,10 +58,10 @@ const Header = () => {
             </a>
           </div>
           <img
-            src="../assets/img/profile-picture.png"
+            src="../assets/img/profile_picture.png"
             alt="Photo de profile"
-            width="200px"
-            height="200px"
+            width="300px"
+            height="300px"
           />
         </div>
 

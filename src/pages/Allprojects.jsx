@@ -13,7 +13,9 @@ const Allprojects = () => {
         <Project projectId={4} />
         <Project projectId={5} />
       </div>
-      <Button index={1} page={"projects"} />
+      <div className="allprojects-button">
+        <Button index={1} page={"projects"} />
+      </div>
     </div>
   );
 };

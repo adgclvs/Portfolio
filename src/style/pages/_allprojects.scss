@@ -1,6 +1,13 @@
 .allprojects {
   margin-top: 5rem;
 
+  .allprojects-button{
+    position: relative;
+    width: 200px;
+    left: 88%;
+    bottom: 1rem;
+  }
+
     .allprojects-content{
       display: flex;
       flex-direction: column;
