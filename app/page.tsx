@@ -1,8 +1,14 @@
+import ProjectCard from "./components/ProjectCard";
+import projects from "./data/projects";
+
 export default function Home() {
   return (
     <main>
-      <h1>Bienvenue sur mon portfolio</h1>
-      <p>Ceci est ma page d'accueil créée avec Next.js.</p>
+      {projects.map((project) => (
+        <li key={project.title}>
+          <ProjectCard project={project} />
+        </li>
+      ))}
     </main>
   );
 }
