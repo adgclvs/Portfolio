@@ -9,10 +9,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "rgba(var(--background))",
+        background_alt: "rgba(var(--subtle-background))",
+        foreground: "rgba(var(--foreground))",
+        border: "rgba(var(--subtle-border))",
+        input: "rgba(var(--interactive-border))",
+        accent: {
+          DEFAULT: "rgba(var(--solid-background))",
+          hover: "rgba(var(--solid-hover-background))",
+        },
+        text: {
+          low: "rgba(var(--low-contrast-text))",
+          high: "rgba(var(--high-contrast-text))",
+        },
       },
     },
   },
   plugins: [],
 } satisfies Config;
+

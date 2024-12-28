@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light {
+    --background: 255, 252, 253;
+    --subtle-background: 255, 247, 248;
+    --ui-element-background: 254, 234, 237;
+    --ui-element-hover-background: 255, 220, 225;
+    --ui-element-active-background: 255, 206, 214;
+    --subtle-border: 248, 191, 200;
+    --interactive-border: 239, 172, 184;
+    --hovered-interactive-border: 229, 146, 163;
+    --solid-background: 229, 70, 102;
+    --solid-hover-background: 220, 59, 93;
+    --low-contrast-text: 193, 0, 48, 0.859;
+    --high-contrast-text: 100, 23, 43;
+}
+
+.dark {
+    --background: 25, 17, 19;
+    --subtle-background: 30, 21, 23;
+    --ui-element-background: 58, 20, 30;
+    --ui-element-hover-background: 78, 19, 37;
+    --ui-element-active-background: 94, 26, 46;
+    --subtle-border: 111, 37, 57;
+    --interactive-border: 136, 52, 71;
+    --hovered-interactive-border: 179, 68, 90;
+    --solid-background: 229, 70, 102;
+    --solid-hover-background: 236, 90, 114;
+    --low-contrast-text: 255, 148, 157;
+    --high-contrast-text: 254, 210, 225;
+}
