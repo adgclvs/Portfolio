@@ -27,8 +27,8 @@ const Header: React.FC = () => {
         <header className='sticky top-0 py-4'>
             <Section className=' flex items-center justify-between'>
                 <h1 className='text-lg font-bold '>adgclvs.com</h1>
-                    <Button className="rounded-md" onClick={toggleDarkMode}>
-                        {darkMode ? <SunIcon size={32}/> : <MoonIcon size={12}/>}
+                    <Button variant="ghost" onClick={toggleDarkMode}>
+                        {darkMode ? <SunIcon size={12}/> : <MoonIcon size={12}/>}
                     </Button>
             </Section>
         </header>

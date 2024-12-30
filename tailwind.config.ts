@@ -10,51 +10,51 @@ export default {
   theme: {
   	extend: {
   		colors: {
-  			background: 'hsl(var(--background))',
+  			background: 'rgba(var(--background))',
   			background_alt: 'rgba(var(--subtle-background))',
-  			foreground: 'hsl(var(--foreground))',
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
+  			foreground: 'rgba(var(--foreground))',
+  			border: 'rgba(var(--border))',
+  			input: 'rgba(var(--input))',
   			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
+  				DEFAULT: 'rgba(var(--accent))',
   				hover: 'rgba(var(--solid-hover-background))',
-  				foreground: 'hsl(var(--accent-foreground))'
+  				foreground: 'rgba(var(--accent-foreground))'
   			},
   			text: {
   				low: 'rgba(var(--low-contrast-text))',
   				high: 'rgba(var(--high-contrast-text))'
   			},
   			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
+  				DEFAULT: 'rgba(var(--card))',
+  				foreground: 'rgba(var(--card-foreground))'
   			},
   			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
+  				DEFAULT: 'rgba(var(--popover))',
+  				foreground: 'rgba(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				DEFAULT: 'rgba(var(--primary))',
+  				foreground: 'rgba(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
+  				DEFAULT: 'rgba(var(--secondary))',
+  				foreground: 'rgba(var(--secondary-foreground))'
   			},
   			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
+  				DEFAULT: 'rgba(var(--muted))',
+  				foreground: 'rgba(var(--muted-foreground))'
   			},
   			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
+  				DEFAULT: 'rgba(var(--destructive))',
+  				foreground: 'rgba(var(--destructive-foreground))'
   			},
-  			ring: 'hsl(var(--ring))',
+  			ring: 'rgba(var(--ring))',
   			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
+  				'1': 'rgba(var(--chart-1))',
+  				'2': 'rgba(var(--chart-2))',
+  				'3': 'rgba(var(--chart-3))',
+  				'4': 'rgba(var(--chart-4))',
+  				'5': 'rgba(var(--chart-5))'
   			}
   		},
   		borderRadius: {

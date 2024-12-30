@@ -31,7 +31,7 @@
     --low-contrast-text: 255, 148, 157;
     --high-contrast-text: 254, 210, 225;
 }
-
+/* 
 @layer base {
   :root {
         --background: 0 0% 100%;
@@ -95,4 +95,4 @@
   body {
     @apply bg-background text-foreground;
     }
-}
+} */
