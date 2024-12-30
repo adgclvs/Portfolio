@@ -13,11 +13,11 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-bold mb-2">{project.title}</h2>
         <div>
-          <Link href={project.github} className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
-            <GithubIcon size={16} />
+          <Link href={project.github} className={cn(buttonVariants({variant: "ghost"}), "size-6 p-0")}>
+            <GithubIcon size={32} />
           </Link>
 
-          <Link href={project.liveDemo} className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+          <Link href={project.liveDemo} className={cn(buttonVariants({variant: "ghost"}), "size-6 p-0")}>
             <OpenInNewIcon className="m-1" />
           </Link>
         </div>

@@ -6,7 +6,7 @@ import Section from "./Section";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section className="mt-48">
     <div className=" flex flex-col m-4 mx-auto rounded-lg">
       <h2 className="text-center m-4 text-4xl">Projects</h2>
       <ul className=" flex ">

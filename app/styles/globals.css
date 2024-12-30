@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --radius: 1rem;
+}
+
 .light {
     --background: 255, 252, 253;
     --subtle-background: 255, 247, 248;
