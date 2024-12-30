@@ -1,12 +1,13 @@
 import React from "react";
 import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
+import NextIcon from "./icons/NextIcon";
 
 const StackIcon = ({ stack }: { stack: string }) => {
   const iconMap: { [key: string]: React.ComponentType<{ size: number }> } = {
     react: ReactIcon,
     tailwind: TailwindIcon,
-    // Ajoutez d'autres mappings ici
+    next: NextIcon,
   };
 
   const IconComponent = iconMap[stack.toLowerCase()] || ReactIcon;

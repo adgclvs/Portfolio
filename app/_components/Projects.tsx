@@ -2,10 +2,12 @@ import React from "react";
 
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
+import Section from "./Section";
 
 const Projects = () => {
   return (
-    <div className=" w-4/5 flex flex-col m-4 mx-auto rounded-lg">
+    <Section>
+    <div className=" flex flex-col m-4 mx-auto rounded-lg">
       <h2 className="text-center m-4 text-4xl">Projects</h2>
       <ul className=" flex ">
         {projects.map((project) => (
@@ -15,6 +17,7 @@ const Projects = () => {
         ))}
       </ul>
     </div>
+    </Section>
   );
 };
 
